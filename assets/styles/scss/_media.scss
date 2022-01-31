@@ -31,15 +31,20 @@
     // End footer
 
     
-.modal {
-    background-color: #0008;
-    &-item {
-        width: 75%;
+    .modal {
+        background-color: #0008;
+        &-item {
+            width: 75%;
+        }
+        &-list {
+            width: 55%;
+        }
     }
-    &-list {
-        width: 55%;
+    .faq {
+        &-item {
+            width: 90%;
+        }
     }
-}
 }
 
 @media screen and(max-width: 640px) {
@@ -128,6 +133,15 @@
         }
         .copy__text {
             font-size: 12px;
+        }
+    }
+    
+    .faq {
+        &-item {
+            width: 95%;
+            height: 550px;
+            border-radius: 10px;
+
         }
     }
 }

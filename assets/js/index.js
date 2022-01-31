@@ -6,6 +6,9 @@ let day = document.querySelector('.calculate-item .day');
 let modal = document.querySelector('.modal');
 let openModals = document.querySelectorAll('.open_modal');
 let closeModals = document.querySelectorAll('.close__modal');
+let faq = document.querySelector('.faq');
+let faqBtn = document.querySelector('.faq__btn');
+let closeFaq = document.querySelector('.close__faq');
 
 openModals.forEach(open => {
     open.addEventListener('click', () => {
@@ -19,9 +22,19 @@ closeModals.forEach(close => {
     });
 });
 
+
+faqBtn.addEventListener('click', () => {
+    faq.classList.remove('hidden');
+});
+
+closeFaq.addEventListener('click', () => {
+    faq.classList.add('hidden');
+});
+
 window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.classList.add('hidden')
+    if (event.target == modal || event.target == faq) {
+        modal.classList.add('hidden');
+        faq.classList.add('hidden');
     }
   }
 
@@ -278,4 +291,10 @@ const btnCopy = document.querySelector('.copy__btn');
     setTimeout(() => {
       copied.style.visibility = 'hidden';
     }, 800);
-  })
+  });
+
+
+$('.faq-list').click(function() {
+    $(this).siblings().removeClass('showFaq');
+    $(this).toggleClass('showFaq');
+  });
