@@ -1,0 +1,186 @@
+
+// DESCTOP
+@media screen and(max-width: 1350px) {
+    .container {
+        padding: 0 25px;
+    }
+}
+
+// TABLET
+@media screen and(max-width: 1024px) {
+    .dashboard, 
+    .calculate {
+        &-item {
+            width: 100%;
+            padding: 25px;
+        }
+    }
+    .footer {
+        &__btn {
+            top: 70px;
+            left: 0;
+            transform: translate(0, 0);
+        }
+        .faq__btn {
+            position: absolute;
+            top: 70px;
+            right: 0;
+        }
+        
+    }
+    // End footer
+
+    
+.modal {
+    background-color: #0008;
+    &-item {
+        width: 75%;
+    }
+    &-list {
+        width: 55%;
+    }
+}
+}
+
+@media screen and(max-width: 640px) {
+    .header__btn {
+        height: 35px;
+    }
+    .header {
+        
+    &-buttons {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .header__btn {
+            margin: 0;
+            margin-top: 20px;
+        }
+    }
+        .nav {
+            .logo {
+                width: 200px;
+                margin-bottom: 20px;
+            }
+        }
+        &__title {
+            font-size: 36px;
+            line-height: 40px;
+        }
+        
+        &__info-text {
+            line-height: 18px;
+        }
+        .total {
+            width: 160px;
+            height: 60px;
+        }
+    }
+
+    .calculate {
+        .range {
+            width: 100%;
+        }
+        .range-info {
+            font-size: 14px;
+        }
+    }
+
+    .dashboard {
+        &-card {
+            width: 32.5%;
+        }
+        .sub-card {
+            width: 48.5%;
+        }
+    }
+        
+.modal {
+    background-color: #0008;
+    &-item {
+        width: 90%;
+    }
+    &__title {
+        font-size: 26px;
+    }
+    &-list {
+        width: 80%;
+    }
+}
+}
+
+// MOBILE
+@media screen and(max-width: 576px) {
+    .container {
+        padding: 0 10px;
+    }
+    .dashboard, 
+    .calculate {
+        &-item {
+            padding: 25px 10px;
+        }
+    }
+    .dashboard {
+        &-card {
+            width: 47.5%; 
+            margin: 0;
+            margin-top: 25px;
+        }
+        .copy__text {
+            font-size: 12px;
+        }
+    }
+}
+
+@media screen and(max-width: 375px) {
+    
+    .header {
+        
+        &-buttons {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .header__btn {
+                margin: 0;
+                margin-top: 20px;
+            }
+            .sub_btn {
+                margin: 0;
+                margin-top: 10px;
+            }
+        }
+        }
+
+    .dashboard {
+        &-card {
+            width: 100%;
+        }
+        .sub-card {
+            width: 100%;
+            margin: 0;
+            margin-bottom: 20px;
+        }
+    }
+    .footer {
+        height: 300px;
+        .container {
+            flex-direction: column;
+        }
+        &__btn {
+            width: 100%;
+            top: 140px;
+            
+        }
+        .faq__btn {
+            right: 0;
+            margin: 0;
+            width: 100%;
+            top: 210px;
+        }
+        .contact {
+            margin-top: 15px;
+        }
+        
+    }
+    // End footer
+}
