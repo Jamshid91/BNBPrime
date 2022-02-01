@@ -808,7 +808,7 @@ input[type="range"]::-moz-range-track {
   }
   .footer__btn {
     top: 70px;
-    left: 0;
+    left: 25px;
     -webkit-transform: translate(0, 0);
         -ms-transform: translate(0, 0);
             transform: translate(0, 0);
@@ -916,6 +916,12 @@ input[type="range"]::-moz-range-track {
     -webkit-border-radius: 10px;
             border-radius: 10px;
   }
+  .footer__btn {
+    left: 10px;
+  }
+  .footer .faq__btn {
+    right: -20px;
+  }
 }
 
 @media screen and (max-width: 375px) {
@@ -958,15 +964,27 @@ input[type="range"]::-moz-range-track {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .footer__info {
+    text-align: center;
+  }
   .footer__btn {
-    width: 100%;
+    width: 90%;
     top: 140px;
+    left: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
   .footer .faq__btn {
     right: 0;
     margin: 0;
-    width: 100%;
+    width: 90%;
     top: 210px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
   .footer .contact {
     margin-top: 15px;
